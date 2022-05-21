@@ -1,5 +1,8 @@
 import builtins
 from pprint import pprint
+from pprint import pprint
+import os 
+
 
 #pprint(dir(builtins))
 
@@ -41,3 +44,104 @@ class_room = "python"
 ## dictionary dic{} == map = {"name": "philo", "age": 90}
 ## set {} == set_numbers = {1, 2, 3, 4, 5} {"apple", "banan", "cherry"}
 ## None
+## tuple == {"man", "woman", "land"}
+
+#diff btwn data type and tuple
+#print(list_parts[0])
+
+ 
+# list_parts = {"man", "woman", "land"}
+# print(dir(list_parts))
+
+# list_man = ("man", "woman", "land")
+# print(dir(list_man))
+
+# #operations
+# hello = "hello world"
+# print(dir(hello))
+
+# num = 1
+# print(dir(num))
+
+# ## Basic calculator
+# hello = "hello world!"
+# print(type(hello))
+
+# ##print(int(hello)) # we cant convert a string to an interger
+
+# x = 45
+# y = str(x)
+# print(type(x))
+# print(y, type(y))
+
+# ## convert an in to str
+# num = 24
+# print(type(num))
+
+# conver_to_string = str(num)
+# print(type(conver_to_string))
+
+# ## convert a float to an int
+# y = 12.2
+# print(type(y))
+
+# z = int(y)
+# print(type(x))
+
+# ## convert an int to a float
+# j = 12
+# print(type(x))
+
+# k = float(j)
+# print(type(k))
+
+# ## convert with boolean
+# ## convert a float to a bool
+
+# x = 0.5
+# print(x, type(x))
+
+# y = bool(x)
+# print(type(y))
+
+# ## Built basic calculators
+
+
+
+
+name = "Hello world!"
+#print(name[0])
+
+#pprint(dir(name))
+# name = "Hello world!"
+# name.index('w')
+# print(name)
+# y = "HELLO"
+# print(y)
+
+# y.isupper()
+# name.rpartition("hello world!")
+
+
+#name = input("Enter name:")
+#print(name)
+
+#name = str(input("Enter name:"))
+#print(type(name))
+
+my_dict = {"name": "philo", "country": "Cameroon", "age": 24, "sex": "female"}
+#pprint(dir(my_dict))
+#print(my_dict.fromkeys())
+print(my_dict.get("name"))
+contries = my_dict.get("country")
+print(my_dict.items())
+
+
+## tuple dict
+tuple_dict = my_dict.items()
+for key in my_dict.items():
+    print(key)
+
+print(my_dict.keys())
+
+
